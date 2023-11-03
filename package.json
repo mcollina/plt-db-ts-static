@@ -1,0 +1,21 @@
+{
+  "scripts": {
+    "start": "platformatic start",
+    "test": "tsc && node --test dist/test/*/*.test.js",
+    "clean": "rm -fr ./dist",
+    "build": "platformatic compile",
+    "migrate": "platformatic db migrations apply"
+  },
+  "devDependencies": {
+    "fastify": "^4.24.3",
+    "typescript": "~5.2.2"
+  },
+  "dependencies": {
+    "@fastify/static": "^6.12.0",
+    "@platformatic/db": "^1.7.1",
+    "platformatic": "^1.7.1"
+  },
+  "engines": {
+    "node": "^18.8.0 || >=20.6.0"
+  }
+}
