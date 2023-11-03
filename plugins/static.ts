@@ -7,6 +7,7 @@ export default async function (fastify: FastifyInstance, opts) {
     root: `${fastify.platformatic.configManager.dirname}/public`,
     prefix: "/public", // optional: default '/'
     index: false,
+    prefixAvoidTrailingSlash: true,
     list: {
       format: 'html',
       render: (dirs, files) => {
